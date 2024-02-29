@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+<link rel="stylesheet"  href="card.css">
+
+<title> Interactive card details form</title>
+
+</head>
+<body>
+
+
+<div class="container">
+<div class="left-content">
+
+<div class="card-front">
+<div class="circle-row">
+  <div></div>
+  <div></div>
+</div>
+
+<h2 class="card-num-display">  0000 0000 0000 0000</h2>
+
+<span>
+<p class="card-name-display"> Jane Appleseed</p>
+<div>
+  <p class="card-dateMonth-display"> 00</p>/
+  <p class="card-dateYear-display">00</p>
+</div>
+</span>
+
+</div>
+<div class="card-back">
+<p class="cvc-display"> 000</p>
+</div>
+</div>
+<div class="right-content">
+
+<form class="query-form">
+<div class="name-details">
+<label for>NAME DETAILS</label><br>
+<input type="text" maxlength="25" pattern="[a-zA-Z]+" title="you are wrong" >
+</div>
+
+<div class="card-details">
+<label for>CARD NUMBER</label><br>
+<input type="text" maxlength="16">
+<p class="card-warning">wrong format. numbers only</p>
+</div>
+
+<div class="date-cvc-details">
+      <div class="date-details">
+            <label for>EXP. DATE(MM-YY)</label>
+            <div>  <input   class="date-month-details"type="text"  maxlength="2">  <input  class="date-year-details"type="text" maxlength="2">
+          
+            </div>
+            <p class="date-warning">cant be blank</p>
+      </div>
+        
+      
+
+      <div class="cvc-details">
+            <label for>CVV</label><br>
+            <input type="text" maxlength="3">
+            <p class="cvc-warning">cant be blank</p>
+      </div>
+
+</div>
+
+
+
+<input  class="submit" type="submit" value="Submit">
+</form>
+
+<form class="success-form">
+      <div class="compelete-message"> 
+         <img src="images/icon-complete.svg">
+          <h2>Thank you</h2>
+          <span>We Have received your card details</span>
+          <button>Submit Another</button>
+    </div>
+    
+    </form>
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- 000
+
+Cardholder Name
+e.g. Jane Appleseed
+
+Card Number
+e.g. 1234 5678 9123 0000
+
+Exp. Date (MM/YY)
+MM
+YY
+
+CVC
+e.g. 123
+
+Confirm -->
+
+<!-- Completed state start -->
+
+<!-- Thank you!
+We've added your card details
+Continue -->
+<script src="card.js"></script>
+</body>
+</html>
